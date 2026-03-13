@@ -1,0 +1,132 @@
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:Segoe UI;
+
+background:
+radial-gradient(circle at top,#037df74f,#000814 70%),
+black;
+
+color:white;
+}
+
+/* PANEL */
+
+.panel{
+
+width: 80vw; 
+height: 80vh;
+
+background:rgba(0,0,0,0.75);
+
+border:1px solid #1378ec;
+
+box-shadow:
+0 0 20px #1378ec,
+inset 0 0 15px #037df74f;
+
+display:flex;
+flex-direction:column;
+
+}
+
+/* HEADER */
+
+.panel-header{
+
+background:#1378ec;
+
+padding:12px;
+
+display:flex;
+align-items:center;
+gap:10px;
+
+font-weight:bold;
+letter-spacing:1px;
+
+}
+
+/* CONTENT */
+
+.panel-content{
+
+flex:1;
+
+padding:20px;
+
+overflow:auto;
+
+line-height:1.6;
+
+}
+
+/* ITEMS */
+
+.data-box{
+
+border:1px solid #1378ec;
+
+padding:12px;
+
+margin-bottom:15px;
+
+background:rgba(19,120,236,0.08);
+
+}
+
+/* ICON */
+
+.panel-header i{
+font-size:18px;
+}
+
+
+p{
+  margin-bottom: 3px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 30px;
+}
+
+p:hover{
+  color: #1378ec;
+  cursor: pointer;
+}
+
+
+h1,
+h2{
+  text-align: center;
+  margin-bottom: 30px;
+  font: 60px 'Segoe UI', sans-serif;
+}
+
+h3{
+  text-align: left;
+  margin-left: 50px;
+   font: 40px 'Segoe UI', sans-serif;
+}
+
+
+ul,
+ol{
+  margin-left: 70px;
+  margin-right: 50px;
+}
+
+ul li,
+ol li{
+  margin-bottom: 10px;
+  font: 30px 'Segoe UI', sans-serif;
+}
+
+ul li:hover,
+ol li:hover{
+  color: #1378ec;
+  cursor: pointer;
+}

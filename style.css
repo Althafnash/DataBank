@@ -1,0 +1,109 @@
+
+/* GLOBAL */
+
+body{
+    margin:0;
+    height:100vh;
+    font-family: "Segoe UI", sans-serif;
+    background:
+    radial-gradient(circle at top,#037df74f,#000814 70%),
+    black;
+    color:white;
+    overflow:hidden;
+}
+
+/* DESKTOP GRID */
+
+.desktop{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,120px);
+    gap:30px;
+    padding:40px;
+    margin: 20px;
+}
+
+/* FOLDER */
+
+.folder{
+    text-align:center;
+}
+
+.folder a{
+    text-decoration:none;
+    color:white;
+}
+
+/* ICON */
+
+.folder i{
+    font-size:70px;
+    color:#1378ec;
+    transition:0.25s;
+    text-shadow:
+    0 0 10px #1378ec,
+    0 0 20px #1378ec,
+    0 0 30px #037df74f;
+}
+
+/* HOVER EFFECT */
+
+.folder:hover i{
+    transform:scale(1.2);
+    text-shadow:
+    0 0 15px #1378ec,
+    0 0 30px #1378ec,
+    0 0 50px #037df74f;
+}
+
+/* TEXT */
+
+.folder span{
+    display:block;
+    margin-top:8px;
+    font-size:14px;
+    letter-spacing:1px;
+}
+
+/* TASKBAR */
+
+.taskbar{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:50px;
+
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(10px);
+
+    border-top:1px solid #1378ec;
+
+    display:flex;
+    align-items:center;
+    padding-left:20px;
+
+    color:#1378ec;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+/* TOP HUD */
+
+.topbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    height:40px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 20px;
+
+    color:#1378ec;
+    font-size:13px;
+    letter-spacing:2px;
+
+    border-bottom:1px solid #1378ec;
+    background:rgba(0,0,0,0.5);
+}
