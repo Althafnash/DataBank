@@ -107,3 +107,68 @@ body{
     border-bottom:1px solid #1378ec;
     background:rgba(0,0,0,0.5);
 }
+
+/* ---------------- MOBILE RESPONSIVE ---------------- */
+
+/* Tablet */
+
+@media (max-width:900px){
+
+    body{
+        overflow:auto;
+    }
+
+    .desktop{
+        grid-template-columns:repeat(auto-fill,90px);
+        gap:20px;
+        padding:20px;
+        margin:10px;
+    }
+
+    .folder i{
+        font-size:55px;
+    }
+
+    .folder span{
+        font-size:12px;
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width:600px){
+
+    body{
+        overflow:auto;
+    }
+
+    .desktop{
+        grid-template-columns:repeat(auto-fill,70px);
+        gap:15px;
+        padding:15px;
+        margin:5px;
+    }
+
+    .folder i{
+        font-size:45px;
+    }
+
+    .folder span{
+        font-size:11px;
+    }
+
+    .taskbar{
+        height:45px;
+        font-size:12px;
+        padding-left:10px;
+    }
+
+    .topbar{
+        height:35px;
+        font-size:11px;
+        padding:0 10px;
+    }
+
+}

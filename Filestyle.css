@@ -139,3 +139,56 @@ a{
 a:visited{
   color: #1378ec;;
 }
+
+
+/* Mobile */
+
+@media (max-width:600px){
+
+body{
+align-items:flex-start;
+padding-top:20px;
+}
+
+.panel{
+width:95vw;
+height:90vh;
+}
+
+.panel-header{
+padding:10px;
+font-size:14px;
+}
+
+.panel-content{
+padding:12px;
+}
+
+h1,h2{
+font-size:28px;
+margin-bottom:20px;
+}
+
+h3{
+font-size:22px;
+margin-left:15px;
+}
+
+p{
+font-size:16px;
+margin-left:15px;
+margin-right:15px;
+}
+
+ul,
+ol{
+margin-left:25px;
+margin-right:15px;
+}
+
+ul li,
+ol li{
+font-size:16px;
+}
+
+}
