@@ -172,3 +172,43 @@ body{
     }
 
 }
+
+.loader{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: #1378ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.loader:after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    border: 15px solid #ddd;
+    border-color: #1378ec;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading{
+    from {
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+.loading--hidden{
+    opacity: 0;
+    visibility: hidden;
+}
